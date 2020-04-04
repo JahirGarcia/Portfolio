@@ -1,0 +1,27 @@
+.text-muted {
+    color: $grey1;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.bg-alter {
+    background-color: $grey2;
+}
+
+.v-gap-1 {
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
+}
+
+.v-gap-2 {
+    padding-bottom: 2.66rem;
+    padding-top: 2.66rem;
+}
+
+.hide-sm {
+    @media screen and (max-width: map-get($breakpoints, "md")) {
+        display: none;
+    }
+}

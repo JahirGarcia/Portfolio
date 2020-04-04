@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
+
+    @media screen and (min-width: map-get($breakpoints , "md")) {
+        padding-top: 0;
+    }
+}
+
+.header__row {
+    display: flex;
+    flex: 0 0 100%;
+}
+
+.header__heading {
+    flex: 1 1 auto;
+    margin-bottom: 2.80rem;
+    
+    @media screen and (min-width: map-get($breakpoints , "md")) {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header__img {
+    width: 100%;
+}
+
+.header__title {
+
+    @media screen and (min-width: map-get($breakpoints , "md")) {
+        margin-bottom: 0;
+    }
+}
+
+.header__actions {
+    flex: 0 0 auto;
+
+    @media screen and (min-width: map-get($breakpoints , "md")) {
+        display: none;
+    }
+}

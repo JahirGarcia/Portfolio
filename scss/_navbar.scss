@@ -1,0 +1,98 @@
+.navbar-wrapper {
+    background-color: $white;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+    top: 0;
+    transition: right .6s;
+    width: 100%;
+    z-index: 1000;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        box-shadow: 0 1px 0 0 $grey1;
+        height: auto;
+        margin-bottom: 2.22rem;
+        position: static;
+    }
+}
+
+.navbar--show {
+    right: 0;
+}
+
+.navbar--hide {
+    right: -100%;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    padding: 3.66rem 1.61rem;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        padding: 0;
+    }
+}
+
+.navbar__button {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar__button--hide {
+    margin-top: 1.33rem;
+}
+
+.navbar__nav {
+    flex: 1 1 auto;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navbar__actions {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        display: none;
+    }
+}
+
+.navbar__item {
+
+    & + .navbar__item {
+        margin-top: 0.55rem;
+
+        @media screen and (min-width: map-get($breakpoints, "md")) {
+            margin-top: 0;
+        }
+    }
+}
+
+.navbar__item--active {
+    .navbar__link {
+        color: $black1;
+    }
+}
+
+.navbar__link {
+    color: $grey1;
+    display: block;
+    font-family: $font-family-heading;
+    padding-bottom: 1.33rem;
+    padding-top: 1.33rem;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        padding-bottom: 1.77rem;
+        padding-top: 1.77rem;
+    }
+}
+
+a.navbar__link {
+    text-decoration: none;
+}

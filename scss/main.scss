@@ -1,0 +1,19 @@
+@import "variables";
+@import "layout";
+@import "reset";
+@import "type";
+@import "utilities";
+@import "buttons";
+@import "navbar";
+@import "components/lang-selector";
+@import "components/skills";
+@import "sections/header";
+@import "sections/portfolio";
+@import "components/social";
+
+body {
+    background-color: $white;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+    overflow-x: hidden;
+}

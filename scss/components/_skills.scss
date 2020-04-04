@@ -1,0 +1,53 @@
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3.88rem;
+}
+
+.skill {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & + & {
+        margin-top: 4.55rem;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        flex: 0 0 percentage(3 / 12);
+        
+        & + & {
+            margin-top: 0;
+        }
+    }
+}
+
+.skill__img {
+    margin-bottom: 1.33rem;
+}
+
+.skill__name {
+    color: $grey1;
+    font-size: 0.88rem;
+    margin-bottom: 2.22rem;
+}
+
+.skill__star-icon::after,
+.skill__star-icon--fill::after {
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    display: inline-block;
+    content: "";
+    height: 1.22rem;
+    vertical-align: middle;
+    width: 1.22rem;
+}
+
+.skill__star-icon::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='20' viewBox='0 0 22 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0853 0.918174C10.3851 -0.00210298 11.687 -0.00210218 11.9869 0.918174L13.738 6.29257C13.8721 6.7042 14.2559 6.98278 14.6888 6.98278H20.3495C21.3189 6.98278 21.7213 8.22381 20.9363 8.79257L16.3614 12.1072C16.0099 12.3619 15.8628 12.8141 15.9973 13.2268L17.7459 18.5934C18.0459 19.5143 16.9926 20.2812 16.2084 19.713L11.6228 16.3907C11.2728 16.137 10.7994 16.137 10.4494 16.3907L5.86382 19.713C5.07956 20.2812 4.02627 19.5143 4.3263 18.5934L6.07487 13.2268C6.20932 12.8141 6.06224 12.3619 5.71078 12.1072L1.13591 8.79257C0.350902 8.22381 0.753233 6.98278 1.72263 6.98278H7.38338C7.81631 6.98278 8.20007 6.7042 8.33419 6.29257L10.0853 0.918174Z' fill='%23E5E5E5'/%3E%3C/svg%3E");
+}
+
+.skill__star-icon--fill::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'>%3Cpath d='M9.37654 1.2131C9.67639 0.292819 10.9783 0.29282 11.2782 1.2131L13.0292 6.58749C13.1634 6.99912 13.5471 7.2777 13.98 7.2777H19.6408C20.6102 7.2777 21.0125 8.51873 20.2275 9.08749L15.6526 12.4021C15.3012 12.6568 15.1541 13.1091 15.2886 13.5217L17.0371 18.8884C17.3372 19.8092 16.2839 20.5762 15.4996 20.0079L10.9141 16.6856C10.564 16.432 10.0907 16.432 9.74063 16.6856L5.15508 20.0079C4.37082 20.5762 3.31753 19.8092 3.61756 18.8884L5.36613 13.5217C5.50058 13.1091 5.3535 12.6568 5.00204 12.4021L0.427169 9.08749C-0.357838 8.51873 0.044493 7.2777 1.01389 7.2777H6.67464C7.10757 7.2777 7.49133 6.99912 7.62545 6.58749L9.37654 1.2131Z' fill='black'/%3E%3C/svg%3E");
+}

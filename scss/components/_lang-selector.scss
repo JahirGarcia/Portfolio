@@ -1,0 +1,45 @@
+.lang-selector {
+    transform: rotateZ(-90deg) rotateY(180deg) rotateX(180deg) translateY(100%);
+    transform-origin: 100% 100%;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        transform: rotateZ(-90deg) translateX(100%);
+    }
+}
+
+.lang-selector__item {
+    display: inline-block;
+    position: relative;
+
+    & + .lang-selector__item::before {
+        background-color: $black1;
+        content: "";
+        height: 80%;
+        left: -0.22rem;
+        position: absolute;
+        top: 0.22rem;
+        width: 2px;
+    }
+}
+
+.lang-selector__item--active {
+    .lang-selector__link {
+        color: $black1;
+    }
+}
+
+.lang-selector__link {
+    color: $grey1;
+    display: block;
+    font-family: $font-family-heading;
+    padding: 0.22rem;
+    text-transform: uppercase;
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        font-size: 0.88rem;
+    }
+}
+
+a.lang-selector__link {
+    text-decoration: none;
+}

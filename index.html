@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__row">
+                <div class="navbar-wrapper navbar--hide" id="NavbarWrapper">
+                    <nav class="navbar">
+                        <ul class="navbar__nav">
+                            <li class="navbar__item navbar__item--active"><a href="#" class="navbar__link">Home</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">About me</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">Skills</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">Portfolio</a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__link">Contacts</a></li>
+                        </ul>
+                        <div class="navbar__actions">
+                            <button class="navbar__button navbar__button--hide" id="NavbarButtonHide">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="21.8471" height="3.03304" transform="matrix(0.697178 0.716898 -0.697178 0.716898 2.11462 0)" fill="#828282"/>
+                                    <rect width="21.8471" height="3.03304" transform="matrix(0.697178 -0.716898 0.697178 0.716898 0.654175 15.8262)" fill="#828282"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-selector">
+                                <li class="lang-selector__item lang-selector__item--active"><a href="#" class="lang-selector__link">Ru</a></li>
+                                <li class="lang-selector__item"><a href="#" class="lang-selector__link">Eng</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__row">
+                <div class="header__heading">
+                    <h1 class="header__title">Denis <br> Novik</h1>
+                    <p>UX | Ui designer <br> 24 years old, Minsk</p>
+                    <ul class="lang-selector hide-sm">
+                        <li class="lang-selector__item"><a href="#" class="lang-selector__link">Ru</a></li>
+                        <li class="lang-selector__item lang-selector__item--active"><a href="#" class="lang-selector__link">Eng</a></li>
+                    </ul>
+                </div>
+                <div class="header__actions">
+                    <button class="navbar__button" id="NavbarButtonShow">
+                        <svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30.96" height="3.6" fill="black"/>
+                            <rect y="7.19922" width="30.96" height="3.6" fill="black"/>
+                            <rect y="14.4004" width="30.96" height="3.6" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="header__row">
+                <img id="HeroIMG" src="./img/hero_sm.svg" alt="Denis Novik" class="header__img">
+            </div>
+        </header>
+    </div>
+    <main>
+        <section class="bg-alter">
+            <div class="container v-gap-1">
+                <div class="row">
+                    <div class="col text-centered">
+                        <h2>About me</h2>
+                        <p>Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it. <br><br><br>
+                        I'm studying at courses "Web and mobile design <br> interfaces" in IT-Academy. <br><br><br>
+                        Ready to implement excellent projects <br> with wonderful people.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container v-gap-1">
+                <div class="row">
+                    <div class="col text-centered">
+                        <h2>Skills</h2>
+                        <p>I work in such programs as</p>
+                        <div class="skills-wrapper">
+                            <div class="skill">
+                                <img src="./img/photoshop.svg" alt="Photoshop Logo" class="skill__img">
+                                <h3 class="skill__name">Adobe <br> Photoshop</h3>
+                                <div>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon"></span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <img src="./img/illustrator.svg" alt="Illustrator Logo" class="skill__img">
+                                <h3 class="skill__name">Adobe <br> Illustrator</h3>
+                                <div>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon"></span>
+                                    <span class="skill__star-icon"></span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <img src="./img/after_effects.svg" alt="After Effects Logo" class="skill__img">
+                                <h3 class="skill__name">Adobe <br> After Effects</h3>
+                                <div>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon"></span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <img src="./img/figma.svg" alt="Figma Logo" class="skill__img">
+                                <h3 class="skill__name">Figma</h3>
+                                <div>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon skill__star-icon--fill"></span>
+                                    <span class="skill__star-icon"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-alter">
+            <div class="container v-gap-1">
+                <div class="row">
+                    <div class="col text-centered">
+                        <h2>Portfolio</h2>
+                        <div>
+                            <div class="portfolio">
+                                <img src="./img/ofs.svg" alt="Online Fashion Store" class="portfolio__img">
+                                <a href="#">Online fashion store - Homepage</a>
+                            </div>
+                            <div class="portfolio">
+                                <img src="./img/rebook.svg" alt="Rebook Store" class="portfolio__img">
+                                <a href="#">Reebok Store - Concept</a>
+                            </div>
+                            <div class="portfolio">
+                                <img src="./img/braun.svg" alt="Braun Landing Page" class="portfolio__img">
+                                <a href="#">Braun Landing Page - Concept</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container v-gap-1">
+                <div class="row">
+                    <div class="col text-centered">
+                        <h2>Contacts</h2>
+                        <p>Want to know more or just chat?<br> You are welcome!</p>
+                        <div class="row v-gap-2">
+                            <div class="col">
+                                <a href="" class="button">Send message</a>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class="social">
+                                <li><a href=""><span class="social__icon social__icon--linked-in"></span></a></li>
+                                <li><a href=""><span class="social__icon social__icon--instagram"></span></a></li>
+                                <li><a href=""><span class="social__icon social__icon--behance"></span></a></li>
+                                <li><a href=""><span class="social__icon social__icon--dribble"></span></a></li>
+                            </ul>
+                        </nav>
+                        <p class="text-muted">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

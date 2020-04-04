@@ -1,0 +1,19 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+
+    & + & {
+        margin-top: 4.33rem;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, "md")) {
+        & + & {
+            margin-top: 5.55rem;
+        }
+    }
+}
+
+.portfolio__img {
+    max-width: 100%;
+    margin-bottom: 2.55rem;
+}
